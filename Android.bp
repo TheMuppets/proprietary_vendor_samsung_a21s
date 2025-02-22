@@ -8,12 +8,11 @@ soong_namespace {
 	],
 }
 
-prebuilt_etc_xml {
-	name: "sec.android.hardware.nfc@1.2-service.xml",
+prebuilt_etc {
+	name: "libnfc-sec-vendor",
 	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml",
+	src: "proprietary/vendor/etc/libnfc-sec-vendor.conf",
 	filename_from_src: true,
-	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
